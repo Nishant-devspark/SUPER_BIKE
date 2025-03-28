@@ -1,0 +1,1632 @@
+:root {
+    --primary-color: #fd8a20;
+    --secondary-color: #262626ee;
+    --background-color: #191414;
+    --text-color: #ffffff;
+    --button-color: #82b440;
+    font-family: "Rajdhani", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+.login {
+    height: 54px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: #545454;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.start {
+    height: 18px;
+    width: 150px;
+    object-fit: contain;
+}
+
+/* Responsive Styles for Laptop Screens */
+@media (max-width: 1024px) {
+    .login {
+        height: 50px;
+        padding: 0 15px;
+    }
+
+    .start {
+        width: 130px;
+    }
+}
+
+/* Responsive Styles for Phone Screens */
+@media (max-width: 480px) {
+    .login {
+        height: 46px;
+        padding: 0 20px;
+    }
+
+    .start {
+        width: 100px;
+        height: 16px;
+    }
+}
+
+/* Responsive Styles for Small Phone Screens */
+@media (max-width: 360px) {
+    .login {
+        height: 40px;
+        padding: 0 5px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .start {
+        width: 80px;
+        height: 14px;
+    }
+}
+.buy {
+    height: 31px;
+    width: 93px;
+    background-color: var(--button-color);
+    padding: 5px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: var(--text-color);
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.map {
+    height: 48px;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Responsive Styles for Laptop Screens */
+@media (max-width: 1024px) {
+    .buy {
+        height: 28px;
+        width: 85px;
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+
+    .map {
+        height: 44px;
+        font-size: 14px;
+    }
+}
+
+/* Responsive Styles for Phone Screens */
+@media (max-width: 768px) {
+    .buy {
+        height: 26px;
+        width: 80px;
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    .map {
+        height: 40px;
+        font-size: 13px;
+        padding: 20px;
+    }
+}
+
+/* Responsive Styles for Small Phone Screens */
+@media (max-width: 480px) {
+    .buy {
+        height: 24px;
+        width: 70px;
+        padding: 5px 8px;
+        font-size: 10px;
+       
+    }
+
+    .map {
+        height: 36px;
+        font-size: 12px;
+    }
+}
+
+.map-icon, .map-icon2 {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    padding-left: 5px;
+    gap: 22px;
+    font-weight: 400;
+}
+
+.map-icon {
+    flex: 1;
+    max-width: 650px;
+}
+
+.map-icon2 {
+    width: auto;
+    font-weight: bold;
+}
+
+/* Responsive Styles for Laptop Screens */
+@media (max-width: 1024px) {
+    .map-icon, .map-icon2 {
+        height: 38px;
+        gap: 18px;
+        font-size: 14px;
+    }
+
+    .map-icon {
+        max-width: 550px;
+    }
+}
+
+/* Responsive Styles for Phone Screens */
+@media (max-width: 768px) {
+    .map-icon, .map-icon2 {
+        height: 34px;
+        gap: 14px;
+        font-size: 13px;
+        padding-left: 3px;
+    }
+
+    .map-icon {
+        max-width: 450px;
+    }
+}
+
+/* Responsive Styles for Small Phone Screens */
+@media (max-width: 480px) {
+    .map-icon, .map-icon2 {
+        height: 30px;
+        gap: 10px;
+        font-size: 12px;
+        padding-left: 2px;
+    }
+
+    .map-icon {
+        max-width: 350px;
+    }
+}
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.map-icon2 svg:hover, a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+    .login {
+        height: auto;
+        /* flex-direction: column; */
+        padding: 18px;
+    }
+
+    .map {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .map-icon, .map-icon2 {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.ride {
+    height: 84px;
+    width: auto;
+    background-color: #2f2e2e;
+    font-size: 15px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #bebebe;
+}
+
+.ride img {
+    padding: 0 32px;
+    object-fit: contain;
+    padding-right: 20px;
+    display: inline;
+    margin-left: 40px;
+}
+
+/* Responsive Styles for Laptop Screens */
+@media (max-width: 1024px) {
+    .ride {
+        height: 74px;
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    .ride img {
+        padding: 0 28px;
+        padding-right: 18px;
+        margin-left: 35px;
+    }
+}
+
+/* Responsive Styles for Phone Screens */
+@media (max-width: 768px) {
+    .ride {
+        height: 64px;
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .ride img {
+        padding: 0 24px;
+        padding-right: 16px;
+        margin-left: 30px;
+    }
+}
+
+/* Responsive Styles for Small Phone Screens */
+@media (max-width: 480px) {
+    .ride {
+        height: 54px;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .ride img {
+        padding: 0 20px;
+        padding-right: 14px;
+        margin-left: 25px;
+    }
+}
+#list {
+    display: none;
+}
+
+.ride-nav {
+    display: inline;
+}
+
+.ride-nav svg:hover {
+    background-color: #fd8a20;
+}
+
+/* Responsive Styles for Laptop Screens */
+@media (max-width: 1024px) {
+    .ride-nav {
+        font-size: 14px;
+    }
+
+    .ride-nav svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Responsive Styles for Phone Screens */
+@media (max-width: 768px) {
+    .ride-nav {
+        font-size: 13px;
+    }
+
+    .ride-nav svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/* Responsive Styles for Small Phone Screens */
+@media (max-width: 480px) {
+    .ride-nav {
+        font-size: 12px;
+    }
+
+    .ride-nav svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.ride button {
+    height: 44px;
+    width: 157px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 16px;
+    display: inline;
+    position: relative;
+    right: 7rem;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Styles for Laptop Screens */
+@media (max-width: 1024px) {
+    .ride button {
+        height: 40px;
+        width: 140px;
+        font-size: 15px;
+        right: 6rem;
+    }
+}
+
+/* Responsive Styles for Phone Screens */
+@media (max-width: 768px) {
+    .ride button {
+        height: 36px;
+        width: 120px;
+        font-size: 14px;
+        right: 5rem;
+    }
+}
+
+/* Responsive Styles for Small Phone Screens */
+@media (max-width: 480px) {
+    .ride button {
+        height: 32px;
+        width: 100px;
+        font-size: 13px;
+        right: 4rem;
+    }
+}
+ 
+
+.ride a {
+    padding: 13px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Responsive Styles for Laptop Screens */
+@media (max-width: 1024px) {
+    .ride a {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+}
+
+/* Responsive Styles for Phone Screens */
+@media (max-width: 768px) {
+    .ride a {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+}
+
+/* Responsive Styles for Small Phone Screens */
+@media (max-width: 480px) {
+    .ride a {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+}
+
+#page {
+    position: relative;
+    right: 10px;
+}
+
+.main-img {
+    width: 100%;
+    object-fit: cover;
+    color: #bebebe;
+}
+
+.suru {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("https://templatekits.themewarrior.com/ride-on/wp-content/uploads/sites/58/2022/06/home-hero.jpg");
+    width: 100%;
+    height: 750px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .suru {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .suru {
+        height: 300px;
+    }
+    
+}
+
+.suru h4 {
+    font-size: 32px;
+    color: #ecdbba;
+    display: inline;
+    position: relative;
+    bottom: 20px;
+}
+
+.suru h2 {
+    font-size: 96px;
+    color: #ffffff;
+    font-weight: bolder;
+    max-width: 55%;
+    line-height: 96px;
+}
+
+/* Responsive Styles for Laptop Screens */
+@media (max-width: 1024px) {
+    .suru h4 {
+        font-size: 28px;
+        bottom: 18px;
+    }
+
+    .suru h2 {
+        font-size: 80px;
+        max-width: 60%;
+        line-height: 80px;
+    }
+}
+
+/* Responsive Styles for Tablet Screens */
+@media (max-width: 768px) {
+    .suru h4 {
+        font-size: 24px;
+        bottom: 16px;
+    }
+
+    .suru h2 {
+        font-size: 64px;
+        max-width: 70%;
+        line-height: 64px;
+    }
+}
+
+/* Responsive Styles for Phone Screens */
+@media (max-width: 480px) {
+    .suru h4 {
+        font-size: 20px;
+        bottom: 14px;
+    }
+
+    .suru h2 {
+        font-size: 48px;
+        width:  80%;
+        line-height: 48px;
+        /* border: 2px solid red; */
+       
+    }
+}
+
+/* Responsive Styles for Small Phone Screens */
+@media (max-width: 360px) {
+    .suru h4 {
+        font-size: 11px;
+        bottom: 10px;
+    }
+
+    .suru h2 {
+        font-size: 24px;
+        max-width: 60%;
+        line-height: 30px;
+        
+    }
+}
+
+#button {
+    height: 45px;
+    width: 180px;
+    background-color: #fd8b21;
+    font-size: 14px;
+    margin-top: 25px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 2px solid #fd8a20;
+    transition: all 0.4s ease-in-out;
+}
+
+#button:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Styles for Laptop Screens */
+@media (max-width: 1024px) {
+    #button {
+        height: 40px;
+        width: 160px;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+}
+
+/* Responsive Styles for Tablet Screens */
+@media (max-width: 768px) {
+    #button {
+        height: 36px;
+        width: 140px;
+        font-size: 12px;
+        margin-top: 18px;
+    }
+}
+
+/* Responsive Styles for Phone Screens */
+@media (max-width: 480px) {
+    #button {
+        height: 32px;
+        width: 95px;
+        font-size: 11px;
+        margin-top: 15px;
+    }
+
+   
+}
+
+/* Responsive Styles for Small Phone Screens */
+@media (max-width: 360px) {
+    #button {
+        height: 25px;
+        width: 70px;
+        font-size: 10px;
+        margin-top: 12px;
+    }
+
+}
+@media (max-width: 360px) {
+    #button svg {
+       height: 10px;
+       width: 25px;
+    }
+
+}
+
+.suru-1 {
+    padding-top: 150px;
+    padding-left: 170px;
+}
+
+#h5 {
+    color: white;
+    font-size: 24px;
+    font-weight: 1000;
+    margin-top: 50px;
+    margin-left: 170px;
+}
+
+/* Responsive Styles for Laptop Screens */
+@media (max-width: 1024px) {
+    .suru-1 {
+        padding-top: 120px;
+        padding-left: 120px;
+    }
+
+    #h5 {
+        font-size: 22px;
+        margin-top: 40px;
+        margin-left: 120px;
+    }
+}
+
+/* Responsive Styles for Tablet Screens */
+@media (max-width: 768px) {
+    .suru-1 {
+        padding-top: 100px;
+        padding-left: 80px;
+    }
+
+    #h5 {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+}
+
+/* Responsive Styles for Phone Screens */
+@media (max-width: 480px) {
+    .suru-1 {
+        padding-top: 80px;
+        padding-left: 40px;
+    }
+
+    #h5 {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .suru-1 h4{
+        margin-right: 20px;
+        font-size: 16px;
+    }
+    .suru-1 h2{
+    font-size: 36px;
+    }
+}
+
+
+/* Responsive Styles for Small Phone Screens */
+@media (max-width: 360px) {
+    .suru-1 {
+        padding-top: 60px;
+        padding-left: 20px;
+    }
+
+    #h5 {
+        font-size: 10px;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+}
+
+.black-dad {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.black-bike {
+    height: 170px;
+    background-color: #1f1a1a;
+    display: inline-block;
+    position: relative;
+}
+
+.black-bike img {
+    height: 160px;
+    object-fit: cover;
+}
+
+.duel {
+    height: 56px;
+    width: 100%;
+    background-color: rgba(6, 5, 5, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.duel button {
+    height: auto;
+    width: auto;
+    background-color: #fa7e09;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.duel button:hover {
+    background-color: #e67308;
+    transform: translateY(-4px);
+}
+
+#con {
+    display: none;
+}
+
+/* Responsive Styles for Laptop Screens */
+@media (max-width: 1024px) {
+    .black-dad {
+        gap: 0.8rem;
+    }
+    
+    .black-bike {
+        height: 150px;
+    }
+}
+
+/* Responsive Styles for Tablet Screens */
+@media (max-width: 768px) {
+    .black-dad {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0.6rem;
+    }
+    
+    .black-bike {
+        height: 130px;
+    }
+    
+    #list {
+        display: block;
+    }
+    
+    .ride {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+    }
+    
+    .ride img {
+        padding: 0;
+        margin: 10px;
+    }
+    
+    .ride {
+        padding: 7px;
+    }
+    
+    .ride-nav {
+        display: none;
+    }
+}
+
+/* Responsive Styles for Phone Screens */
+@media (max-width: 768px) {
+    .black-dad {
+        gap: 0.2rem;
+        height: 300px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .black-bike {
+        height: 150px;
+        width: auto;
+        bottom: -48vh;
+
+    }
+    .black-bike img{
+        object-fit: cover;
+        height: 135px;
+    }
+    .duel{
+        font-size: 19px;
+    }
+    
+
+}
+
+/* Responsive Styles for Small Phone Screens */
+/* Styles for Small Phones (max-width: 360px) */
+@media (max-width: 360px) {
+    .black-dad {
+        gap: 0.2rem;
+        height: 300px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .black-bike {
+        height: 150px;
+        width: auto;
+        bottom: -42.5vh;
+      
+    }
+    
+    .black-bike img {
+        object-fit: cover;
+        height: 96px;
+    }
+    
+    .duel {
+        font-size: 19px;
+    }
+    
+    .suru-1 h4 {
+        font-size: 11px;
+        display: inline;
+    }
+}
+
+/* Styles for Medium Phones (min-width: 361px) and (max-width: 480px) */
+@media (min-width: 361px) and (max-width: 480px) {
+    .black-dad {
+        gap: 0.1rem;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+       
+    }
+    
+    .black-bike {
+        height: auto;
+        width: auto;
+        bottom: -37vh;
+       
+    }
+    
+    .black-bike img {
+        object-fit: cover;
+        height: 108px;
+    }
+    
+    .duel {
+        font-size: 21px;
+       
+    }
+    
+    .suru-1 h4 {
+        font-size: 13px;
+        display: inline;
+    }
+}
+
+/* Styles for Tablets (min-width: 481px) and (max-width: 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .black-dad {
+        gap: 0.5rem;
+        height: 400px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .black-bike {
+        height: 180px;
+        width: auto;
+        bottom: -35vh;
+    }
+    
+    .black-bike img {
+        object-fit: cover;
+        height: 120px;
+    }
+    
+    .duel {
+        font-size: 24px;
+    }
+    
+    .suru-1 h4 {
+        font-size: 15px;
+        display: inline;
+    }
+}
+/* Base Styles */
+.new {
+    width: 100%;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.new-beta {
+    width: 578px;
+    height: auto;
+    padding: 80px 100px;
+    display: inline;
+}
+
+.new-beta h6 {
+    font-size: 20px;
+    color: #fd8a20;
+}
+
+.new-beta h2 {
+    font-size: 64px;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.new-beta p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.7;
+    margin-top: 22px;
+}
+
+.new-beta button {
+    height: 45px;
+    width: 160px;
+    background-color: #fd8a20;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px 13px;
+    margin-top: 60px;
+    transition: all 0.4s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.new-beta button:hover {
+    background-color: #e67308;
+    transform: translateY(-4px);
+}
+
+/* Tablet Styles (768px - 1400px) */
+@media screen and (max-width: 1400px) {
+    .new-beta {
+        width: 100%;
+        padding: 60px 80px;
+    }
+    
+    .new-beta h2 {
+        font-size: 48px;
+    }
+    
+    .new-beta button {
+        margin-top: 40px;
+    }
+}
+
+/* Small Tablet Styles (600px - 768px) */
+@media screen and (max-width: 768px) {
+    .new-beta {
+        padding: 50px 60px;
+    }
+    
+    .new-beta h6 {
+        font-size: 18px;
+    }
+    
+    .new-beta h2 {
+        font-size: 40px;
+    }
+    
+    .new-beta p {
+        font-size: 15px;
+    }
+    
+    .new-beta button {
+        margin-top: 30px;
+    }
+}
+
+/* Mobile Styles (up to 600px) */
+@media screen and (max-width: 600px) {
+    .new {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .new-beta {
+        padding: 40px 30px;
+        width: auto;
+    }
+    
+    .new-beta h6 {
+        font-size: 16px;
+    }
+    
+    .new-beta h2 {
+        font-size: 32px;
+    }
+    
+    .new-beta p {
+        font-size: 14px;
+    }
+    
+    .new-beta button {
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+        margin-top: 25px;
+        padding: 12px 24px 10px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .new-beta {
+        width: auto;
+        margin-top: -20px;
+        padding: 30px 10px;
+    }
+    
+    .new {
+        width: auto;
+        padding:30px 10px;
+    }
+    
+    .new-beta h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    
+    .img {
+        width: 100%;
+        height: auto;
+        margin-top: 310px;
+        object-fit: cover;
+        /* width: 400px; */
+    }
+    
+    .new-beta button {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+}
+/* Responsive Design Section CSS */
+.DESIGN {
+    width: 100%;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    align-items: center; /* Ensures vertical centering */
+}
+
+.jio {
+    display: flex;
+    position: relative;
+    bottom: 9px;
+    left: 5px;
+}
+
+.DESIGN-BETA {
+    width: 100%;
+    padding: 20px;
+    display: flex; /* Changed from inline to flex */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.DESIGN h6 {
+    font-size: 18px;
+    color: #fd8a20;
+    margin-bottom: 10px;
+}
+
+.DESIGN-BETA h2 {
+    font-size: 36px;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-top: 10px;
+}
+
+.DESIGN-BETA p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+.DESIGN-BETA img, .DESIGN img {
+    width: 100%; /* Responsive width */
+    max-width: 578px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures full image is visible */
+}
+
+.DESIGN button {
+    height: 45px;
+    width: 160px;
+    background-color: #fd8a20;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    margin-top: 30px;
+    transition: all 0.4s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.DESIGN button:hover {
+    background-color: #e67308;
+    transform: translateY(-4px);
+}
+
+/* Tablet Responsiveness */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .DESIGN-BETA {
+        width: 100%;
+        padding: 40px 50px;
+    }
+
+    .DESIGN-BETA h2 {
+        font-size: 48px;
+    }
+}
+
+/* Desktop Responsiveness */
+@media screen and (min-width: 1024px) {
+    .DESIGN {
+        align-items: center;
+    }
+
+    .DESIGN-BETA {
+        width: 60%;
+        padding: 80px 100px;
+    }
+
+    .DESIGN-BETA h2 {
+        font-size: 64px;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 400px) {
+    .DESIGN {
+        display: flex;
+        flex-direction: column; 
+        padding: 30px 12px;
+    }
+
+    .DESIGN img {
+        order: 1;
+        max-width: 100%; 
+        height: auto;
+    }
+
+    .DESIGN-BETA {
+        order: 2;
+        padding: 20px 10px;
+    }
+
+    .DESIGN-BETA h2 {
+        font-size: 28px;
+    }
+
+    .DESIGN-BETA p {
+        font-size: 14px;
+    }
+
+    .DESIGN button {
+        width: 100%;
+        padding: 12px 24px;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+}
+.MODERN {
+    width: 100%;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 135px;
+}
+
+.MODERN img {
+    height: 485px;
+    margin-left: 30px;
+    width: 358px;
+    object-fit: cover;
+   position: relative;
+   bottom: 8.2px;
+   right: 2px;
+}
+
+.MODERN-BETA {
+    width: 600px;
+    height: auto;
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: ; */
+}
+
+.MODERN-BETA h6 {
+    font-size: 20px;
+    color: #fd8a20;
+}
+
+.MODERN-BETA h2 {
+    font-size: 64px;
+    color: #ffffff;
+    line-height: 1;
+    margin-top: 10px;
+    display: inline;
+}
+
+.MODERN-BETA p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.7;
+    margin-top: 22px;
+}
+
+.MODERN-BETA button {
+    height: 45px;
+    width: 160px;
+    background-color: #fd8a20;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px 13px;
+    margin-top: 60px;
+    transition: all 0.4s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.MODERN-BETA button:hover {
+    background-color: #e67308;
+    transform: translateY(-4px);
+}
+
+/* Tablet Styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .MODERN {
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MODERN-BETA {
+        width: 100%;
+        padding: 60px 40px;
+        text-align: center;
+    }
+
+    .MODERN img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
+
+/* Small Tablet Styles (600px - 768px) */
+@media screen and (max-width: 768px) {
+    .MODERN-BETA {
+        padding: 50px 30px;
+    }
+
+    .MODERN-BETA h6 {
+        font-size: 18px;
+    }
+
+    .MODERN-BETA h2 {
+        font-size: 40px;
+    }
+
+    .MODERN-BETA p {
+        font-size: 15px;
+    }
+}
+
+/* Mobile Styles (up to 600px) */
+@media screen and (max-width: 600px) {
+    .MODERN {
+        padding: 0 10px;
+    }
+
+    .MODERN-BETA {
+        padding: 40px 20px;
+    }
+
+    .MODERN-BETA h6 {
+        font-size: 16px;
+    }
+
+    .MODERN-BETA h2 {
+        font-size: 32px;
+    }
+
+    .MODERN-BETA p {
+        font-size: 14px;
+    }
+
+    .MODERN-BETA button {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+        margin-top: 30px;
+        padding: 12px 24px;
+
+    }
+}
+
+/* Very Small Mobile Styles (up to 400px) */
+@media screen and (max-width: 400px) {
+    .MODERN-BETA {
+        padding: 30px 15px;
+    }
+
+    .MODERN-BETA h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .MODERN img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .MODERN-BETA button{
+        border-radius: 7px;
+        font-size: 16px;
+    }
+}
+.shop{
+    height:auto;
+    width: 100%;
+    background-color: #191414;
+    /* color: #e67308; */
+}
+.shop-beta{
+    object-fit: cover;
+    /* height: 190px; */
+    width: auto;
+    background-color: #191414;
+}
+.shop h2{
+    color: #fd8a20;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    
+    /* padding: 10px; */
+    
+  
+
+}
+.shop h1{
+    color:white;
+    font-size: 64px;
+    margin-left: 10px;
+}
+.shop p{
+    color: #bebebe;
+    font-size: 15px;
+    line-height: 1.3;
+}
+.shop-beta2{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.shop-beta button{
+    height: 60PX;
+    width: 148px;
+}
+.shop-beta3{
+    height: 190px;
+    width: auto;
+    max-width: 50%;
+    /* border: 2px solid red; */
+padding: 0px 12px 0px 12px;
+margin: 30px 0px 50px;
+
+
+}
+.shop-beta3 P{
+    line-height: 1.2;
+    display: inline;
+   
+}
+.scooter{
+    height: 48px;
+    width: auto;
+    background-color: #191414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.scooter button{
+    height: 48px;
+    width: 148px;
+    /* display: inline; */
+    background-color: #fd8a20;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+  
+}
+.scooter a{
+   font-size: 14px;
+}:root {
+    --primary-bg: #191414;
+    --accent-color: #fd8a20;
+    --text-light: #bebebe;
+    --text-white: #ffffff;
+}
+
+.shop-beta2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+}
+
+.shop-beta button {
+    height: 60px;
+    width: 148px;
+    background-color: var(--accent-color);
+    color: var(--text-white);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.shop-beta button:hover {
+    transform: scale(1.05);
+    background-color: #ff9b3f;
+}
+
+.shop-beta3 {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    min-height: 190px;
+ 
+    padding: 15px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.shop-beta3:hover {
+    box-shadow: 0 4px 15px rgba(253, 138, 32, 0.2);
+}
+
+.shop-beta3 p {
+    line-height: 1.4;
+    color: var(--text-light);
+    font-size: 15px;
+    text-align: left;
+}
+
+.scooter {
+    min-height: 75px;
+    width: 100%;
+    background-color: var(--primary-bg);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.scooter button {
+    height: 48px;
+    width: 148px;
+    background-color: var(--accent-color);
+    color: var(--text-white);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.scooter button:hover {
+    transform: scale(1.05);
+    background-color: #ff9b3f;
+}
+
+.scooter a {
+    font-size: 14px;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.scooter a:hover {
+    color: var(--accent-color);
+}
+
+/* Comprehensive Responsive Adjustments */
+@media screen and (max-width: 1200px) {
+    .shop-beta3 {
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .shop-beta3 {
+        max-width: 60%;
+    }
+
+    .shop-beta button,
+    .scooter button {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .shop-beta2,
+    .scooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop-beta3 {
+        max-width: 90%;
+        margin: 20px 5%;
+    }
+
+    .shop-beta button,
+    .scooter button {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .shop-beta3 {
+        padding: 10px;
+        margin: 15px 3%;
+        /* width: auto; */
+    }
+    .scooter{
+        height: auto;
+        width: auto;
+        padding: 12px;
+    }
+    .shop-beta2{
+        /* padding: 5px; */
+    }
+
+    .shop-beta button,
+    .scooter button {
+        width: 100%;
+        max-width: 343px;
+        height: 50px;
+        font-size: 14px;
+        order: 3;
+        
+    }
+    .shop-beta3 h1{
+        font-size: 40px;
+    }
+}
+
+/* Accessibility and Performance Enhancements */
+* {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none ease-in-out;
+    }
+}
