@@ -2686,3 +2686,177 @@ margin: 30px 0px 50px;
         gap: 15px;
     }
 }
+/* Main bus container */
+/* Main bus container */
+.bus {
+    height: auto;
+    min-height: 200px;
+    width: 100%;
+    background-color: #191414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Content section */
+.bus-beta {
+    height: auto;
+    width: 100%;
+    max-width: 360px;
+    transition: all 0.3s ease;
+}
+
+.bus-beta h2 {
+    font-size: 52px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+    transition: font-size 0.3s ease;
+}
+
+.bus-beta p {
+    font-size: 16px;
+    margin: 0px 0px 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Form section */
+.bus-beta1 {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 150px;
+    transition: all 0.3s ease;
+}
+
+.bus-beta1 input {
+    height: 46px;
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 400;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color:#ffffff;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.bus-beta1 input:focus {
+    outline: none;
+    border-color: #fd8a20;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bus-beta1 button {
+    height: 46px;
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #fd8a20;
+    color: #ffffff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.bus-beta1 button:hover {
+    background-color: #e67b18;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bus-beta1 button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Media Queries for different screen sizes */
+@media screen and (max-width: 992px) {
+    .bus {
+        padding: 35px 20px;
+    }
+    
+    .bus-beta {
+        max-width: 320px;
+    }
+    
+    .bus-beta h2 {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bus {
+        gap: 30px;
+        text-align: center;
+        padding: 30px 15px;
+    }
+    
+    .bus-beta {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    .bus-beta h2 {
+        font-size: 38px;
+    }
+    
+    .bus-beta1 {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bus {
+        padding: 25px 12px;
+    }
+    
+    .bus-beta h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    .bus-beta p {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+    
+    .bus-beta1 input,
+    .bus-beta1 button {
+        height: 42px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .bus-beta h2 {
+        font-size: 28px;
+    }
+    
+    .bus-beta1 {
+        gap: 10px;
+    }
+    
+    .bus-beta1 input,
+    .bus-beta1 button {
+        height: 38px;
+        padding: 8px 14px;
+    }
+}
